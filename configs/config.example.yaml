@@ -19,8 +19,8 @@ agent:
 mavlink:
   # Serial port for FC connection (auto-detected if empty)
   # Common: /dev/ttyAMA0 (Pi UART), /dev/ttyACM0 (USB), /dev/ttyS0
-  serial_port: ""
-  baud_rate: 57600
+  serial_port: "/dev/ttyAMA3"
+  baud_rate: 921600
   # MAVLink system ID for this companion computer
   system_id: 1
   component_id: 191
@@ -93,17 +93,17 @@ network:
 # =============================================================================
 server:
   # Deployment model: cloud, self_hosted, hybrid
-  mode: "cloud"
-  # Altnautica cloud (default)
+  mode: "self_hosted"
+  # Vert Air cloud
   cloud:
-    url: "https://convex-site.altnautica.com"
-    mqtt_broker: "mqtt.altnautica.com"
+    url: "https://exciting-marten-867.convex.site"
+    mqtt_broker: "mqtt.vertair.co"
     mqtt_port: 443
-  # Self-hosted server (set mode to "self_hosted" or "hybrid")
+  # Self-hosted server
   self_hosted:
-    url: ""
-    mqtt_broker: ""
-    mqtt_port: 8883
+    url: "https://exciting-marten-867.convex.site"
+    mqtt_broker: "mqtt.vertair.co"
+    mqtt_port: 443
     api_key: ""
   # Telemetry publish rate (Hz)
   telemetry_rate: 2
@@ -113,7 +113,7 @@ server:
   mqtt_transport: "websockets"
   # MQTT auth (required for cloud broker)
   mqtt_username: "ados"
-  mqtt_password: ""
+  mqtt_password: "zyrjun-hozku2-ciJxec"
 
 # =============================================================================
 # Security
@@ -180,7 +180,7 @@ ota:
   # Auto-install updates
   auto_install: false
   # Update server URL
-  server: "https://updates.altnautica.com"
+  server: "https://updates.vertair.co"
 
 # =============================================================================
 # Logging
@@ -216,3 +216,12 @@ swarm:
   default_formation: "line"
   # Default spacing (meters)
   default_spacing: 10
+
+# =============================================================================
+# Pairing
+# =============================================================================
+pairing:
+  convex_url: "https://exciting-marten-867.convex.site"
+  beacon_interval: 30
+  heartbeat_interval: 60
+  code_ttl: 900
