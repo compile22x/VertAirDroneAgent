@@ -59,7 +59,7 @@ ados demo    # simulated drone telemetry, no hardware needed
 Deploy to a companion computer (Raspberry Pi, Jetson, etc.):
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/altnautica/ADOSDroneAgent/main/scripts/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/compile22x/VertAirDroneAgent/main/scripts/install.sh | sudo bash -s -- --pair PC64DS
 ```
 
 The script detects your OS, installs Python 3.11, auto-detects the FC serial port, and configures systemd services.
