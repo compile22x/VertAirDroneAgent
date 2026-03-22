@@ -71,7 +71,7 @@ class VideoConfig(BaseModel):
     wfb: WfbConfig = WfbConfig()
     camera: CameraConfig = CameraConfig()
     recording: RecordingConfig = RecordingConfig()
-    cloud_relay_url: str = ""  # e.g. rtsp://video.altnautica.com:8554
+    cloud_relay_url: str = ""  # e.g. rtsp://video.vertair.co:8554
 
 
 # --- Network ---
@@ -103,8 +103,8 @@ class NetworkConfig(BaseModel):
 # --- Server ---
 
 class CloudServerConfig(BaseModel):
-    url: str = "https://convex-site.altnautica.com"
-    mqtt_broker: str = "mqtt.altnautica.com"
+    url: str = "https://exciting-marten-867.convex.site"
+    mqtt_broker: str = "mqtt.vertair.co"
     mqtt_port: int = 443
 
 
@@ -116,7 +116,7 @@ class SelfHostedServerConfig(BaseModel):
 
 
 class ServerConfig(BaseModel):
-    mode: str = "cloud"
+    mode: str = "self_hosted"
     cloud: CloudServerConfig = CloudServerConfig()
     self_hosted: SelfHostedServerConfig = SelfHostedServerConfig()
     telemetry_rate: int = 2
@@ -196,7 +196,7 @@ class OtaConfig(BaseModel):
     channel: str = "stable"
     check_interval: int = 24
     auto_install: bool = False
-    github_repo: str = "altnautica/ADOSDroneAgent"
+    github_repo: str = "compile22x/VertAirDroneAgent"
     pip_path: str = "/opt/ados/venv/bin/pip"
     service_name: str = "ados-agent"
 
@@ -214,7 +214,7 @@ class LoggingConfig(BaseModel):
 
 class PairingConfig(BaseModel):
     state_path: str = "/etc/ados/pairing.json"
-    convex_url: str = ""  # Convex HTTP endpoint for cloud pairing
+    convex_url: str = "https://exciting-marten-867.convex.site"  # Convex HTTP endpoint for cloud pairing
     beacon_interval: int = 30  # seconds
     heartbeat_interval: int = 60  # seconds
     code_ttl: int = 900  # 15 minutes
