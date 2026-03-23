@@ -52,7 +52,7 @@ ota:
   channel: "stable"
   check_interval: 24
   auto_install: false
-  github_repo: "altnautica/ADOSDroneAgent"
+  github_repo: "compile22x/VertAirDroneAgent"
 
 logging:
   level: "info"
@@ -61,7 +61,7 @@ logging:
 
 pairing:
   state_path: "/etc/ados/pairing.json"
-  convex_url: "https://convex-site.altnautica.com"
+  convex_url: "https://exciting-marten-867.convex.site"
   beacon_interval: 30
   heartbeat_interval: 60
   code_ttl: 900
