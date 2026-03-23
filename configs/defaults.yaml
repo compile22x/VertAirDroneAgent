@@ -56,7 +56,7 @@ logging:
 
 pairing:
   state_path: "/etc/ados/pairing.json"
-  convex_url: "https://exciting-marten-867.convex.site"
+  convex_url: "https://exciting-marten-867.convex.cloud"
   beacon_interval: 30
   heartbeat_interval: 60
   code_ttl: 900
