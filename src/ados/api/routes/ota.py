@@ -37,7 +37,7 @@ async def get_ota_status():
         "state": "idle",
         "current_version": __version__,
         "channel": "stable",
-        "github_repo": "altnautica/ADOSDroneAgent",
+        "github_repo": "compile22x/VertAirDroneAgent",
         "last_check": "",
         "previous_version": "",
         "error": "",

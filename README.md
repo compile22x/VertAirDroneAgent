@@ -6,13 +6,13 @@
 
 ADOS Drone Agent is the onboard intelligence layer for software-defined drones. It runs on your companion computer, proxies MAVLink from the flight controller to WebSocket and TCP, handles the 50km data link, streams HD video, and gives you full remote control from ADOS Mission Control or any HTTP client.
 
-> **Pairs with [ADOS Mission Control](https://github.com/altnautica/ADOSMissionControl)** — open-source browser GCS with AI PID tuning, mission planning, 3D simulation, live ADS-B, and gamepad flight control at 50Hz.
+> **Pairs with [ADOS Mission Control](https://github.com/compile22x/ADOSMissionControl)** — open-source browser GCS with AI PID tuning, mission planning, 3D simulation, live ADS-B, and gamepad flight control at 50Hz.
 
 <p align="center">
-  <strong><a href="https://github.com/altnautica/ADOSMissionControl">ADOS Mission Control</a></strong> |
-  <strong><a href="https://altnautica.com">Website</a></strong> |
+  <strong><a href="https://github.com/compile22x/ADOSMissionControl">ADOS Mission Control</a></strong> |
+  <strong><a href="https://vertair.co">Website</a></strong> |
   <strong><a href="https://discord.gg/uxbvuD4d5q">Discord</a></strong> |
-  <strong><a href="https://github.com/altnautica/ADOSDroneAgent/issues">Issues</a></strong>
+  <strong><a href="https://github.com/compile22x/VertAirDroneAgent/issues">Issues</a></strong>
 </p>
 
 ---
@@ -50,8 +50,8 @@ ADOS Drone Agent is the onboard intelligence layer for software-defined drones. 
 ## Quick Start
 
 ```bash
-git clone https://github.com/altnautica/ADOSDroneAgent.git
-cd ADOSDroneAgent
+git clone https://github.com/compile22x/VertAirDroneAgent.git
+cd VertAirDroneAgent
 pip install -e ".[dev]"
 ados demo    # simulated drone telemetry, no hardware needed
 ```
@@ -214,8 +214,8 @@ The agent connects to ADOS Mission Control over a three-layer relay.
 ## Development
 
 ```bash
-git clone https://github.com/altnautica/ADOSDroneAgent.git
-cd ADOSDroneAgent
+git clone https://github.com/compile22x/VertAirDroneAgent.git
+cd VertAirDroneAgent
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 
@@ -232,14 +232,14 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for code style and PR guidelines.
 ## Community
 
 - **[Discord](https://discord.gg/uxbvuD4d5q)** — Ask questions, share builds
-- **[Issues](https://github.com/altnautica/ADOSDroneAgent/issues)** — Bug reports and discussions
-- **[Website](https://altnautica.com)** — Company and product info
+- **[Issues](https://github.com/compile22x/VertAirDroneAgent/issues)** — Bug reports and discussions
+- **[Website](https://vertair.co)** — Company and product info
 
 ---
 
 ## Related
 
-- [ADOS Mission Control](https://github.com/altnautica/ADOSMissionControl) — browser GCS (the control side of this pair)
+- [ADOS Mission Control](https://github.com/compile22x/ADOSMissionControl) — browser GCS (the control side of this pair)
 - [ArduPilot](https://github.com/ArduPilot/ardupilot) — open-source autopilot firmware
 - [OpenHD](https://github.com/OpenHD/OpenHD) — open-source digital FPV
 - [WFB-ng](https://github.com/svpcom/wfb-ng) — WiFi broadcast for long-range video

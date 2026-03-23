@@ -10,7 +10,7 @@ readme = "README.md"
 license = "GPL-3.0-or-later"
 requires-python = ">=3.11"
 authors = [
-    { name = "Altnautica", email = "engineering@altnautica.com" }
+    { name = "Vert Air", email = "engineering@vertair.co" }
 ]
 keywords = ["drone", "mavlink", "ardupilot", "companion-computer", "fleet-management"]
 classifiers = [
@@ -50,10 +50,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://altnautica.com/drone-agent"
-Repository = "https://github.com/altnautica/ADOSDroneAgent"
-Documentation = "https://docs.altnautica.com/drone-agent"
-Issues = "https://github.com/altnautica/ADOSDroneAgent/issues"
+Homepage = "https://vertair.co/drone-agent"
+Repository = "https://github.com/compile22x/VertAirDroneAgent"
+Documentation = "https://docs.vertair.co/drone-agent"
+Issues = "https://github.com/compile22x/VertAirDroneAgent/issues"
 
 [project.scripts]
 ados = "ados.cli.main:cli"

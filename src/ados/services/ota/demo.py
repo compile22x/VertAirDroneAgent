@@ -15,11 +15,11 @@ FAKE_MANIFEST = UpdateManifest(
     version="99.0.0",
     channel="demo",
     published_at="2099-01-01T00:00:00Z",
-    download_url="https://github.com/altnautica/ADOSDroneAgent/releases/download/v99.0.0/ados_drone_agent-99.0.0-py3-none-any.whl",
+    download_url="https://github.com/compile22x/VertAirDroneAgent/releases/download/v99.0.0/ados_drone_agent-99.0.0-py3-none-any.whl",
     file_size=52_428_800,
     sha256="0" * 64,
     changelog="Demo update: this is a simulated update for testing.",
-    release_url="https://github.com/altnautica/ADOSDroneAgent/releases/tag/v99.0.0",
+    release_url="https://github.com/compile22x/VertAirDroneAgent/releases/tag/v99.0.0",
 )
 
 
@@ -111,7 +111,7 @@ class DemoOtaUpdater:
             "demo_mode": True,
             "current_version": "0.1.0",
             "channel": "demo",
-            "github_repo": "altnautica/ADOSDroneAgent",
+            "github_repo": "compile22x/VertAirDroneAgent",
             "last_check": "",
             "previous_version": "",
             "error": "",

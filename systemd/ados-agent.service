@@ -1,6 +1,6 @@
 [Unit]
 Description=ADOS Drone Agent
-Documentation=https://github.com/altnautica/ADOSDroneAgent
+Documentation=https://github.com/compile22x/VertAirDroneAgent
 After=network.target
 Wants=network.target
 
