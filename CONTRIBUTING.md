@@ -13,8 +13,8 @@ Thanks for your interest in contributing to the ADOS Drone Agent. This document 
 ### Install
 
 ```bash
-git clone https://github.com/altnautica/ADOSDroneAgent.git
-cd ADOSDroneAgent
+git clone https://github.com/compile22x/VertAirDroneAgent.git
+cd VertAirDroneAgent
 python -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
@@ -96,6 +96,6 @@ By contributing, you agree that your contributions will be licensed under the GP
 
 ## Community
 
-- GitHub Issues: [altnautica/ADOSDroneAgent/issues](https://github.com/altnautica/ADOSDroneAgent/issues)
+- GitHub Issues: [compile22x/VertAirDroneAgent/issues](https://github.com/compile22x/VertAirDroneAgent/issues)
 - Discord: [discord.gg/uxbvuD4d5q](https://discord.gg/uxbvuD4d5q)
 - ArduPilot Discuss: [discuss.ardupilot.org](https://discuss.ardupilot.org/)

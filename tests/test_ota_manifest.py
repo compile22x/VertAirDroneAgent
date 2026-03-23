@@ -13,7 +13,7 @@ def _sample_data() -> dict:
         "version": "0.2.0",
         "channel": "stable",
         "release_date": "2026-03-08T00:00:00Z",
-        "download_url": "https://updates.altnautica.com/stable/ados-0.2.0.bin",
+        "download_url": "https://updates.vertair.co/stable/ados-0.2.0.bin",
         "file_size": 52428800,
         "sha256": "a" * 64,
         "signature": "c2lnbmF0dXJl",
